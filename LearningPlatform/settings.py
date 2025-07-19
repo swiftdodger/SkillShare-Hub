@@ -43,6 +43,13 @@ INSTALLED_APPS = [
     'enrollements',
 ]
 
+
+LOGIN_REDIRECT_URL = '/redirect-after-login/'
+LOGOUT_REDIRECT_URL = '/'
+
+LOGIN_URL = '/users/login/'  
+
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
