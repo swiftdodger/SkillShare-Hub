@@ -245,7 +245,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1752914644199</updated>
-      <workItem from="1752914645254" duration="3172000" />
+      <workItem from="1752914645254" duration="3518000" />
     </task>
     <task id="LOCAL-00001" summary="adding base html in the templates">
       <option name="closed" value="true" />
@@ -263,7 +263,31 @@
       <option name="project" value="LOCAL" />
       <updated>1752917791814</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="updating login redirect in settings">
+      <option name="closed" value="true" />
+      <created>1752917944196</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1752917944196</updated>
+    </task>
+    <task id="LOCAL-00004" summary="deleting comments in the base html">
+      <option name="closed" value="true" />
+      <created>1752918044965</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1752918044965</updated>
+    </task>
+    <task id="LOCAL-00005" summary="setting up thr user app">
+      <option name="closed" value="true" />
+      <created>1752918147836</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1752918147836</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,6 +318,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding base html in the templates" />
+    <MESSAGE value="updating login redirect in settings" />
+    <MESSAGE value="deleting comments in the base html" />
     <MESSAGE value="setting up thr user app" />
     <option name="LAST_COMMIT_MESSAGE" value="setting up thr user app" />
   </component>
