@@ -9,17 +9,17 @@ def register(request):
     if request.method == 'POST':
         form = RegisterForm(request.POST)
         if form.is_valid():
-            user = form.save()
-            role = form.cleaned_data.get('role')  # ✅ get selected role from form
-            # Create UserProfile and attach the selected role
+            user = form.save(commit=False)
+            user.email = form.cleaned_data['email']
+            user.save()
+            role = form.cleaned_data.get('role')
             UserProfile.objects.create(user=user, role=role)
             login(request, user)
-            messages.success(request, "Registration successful. Welcome!")
+            messages.success(request, "Registration successful!")
             return redirect('role_redirect')
     else:
         form = RegisterForm()
     return render(request, 'register.html', {'form': form})
-
 def root_redirect(request):
     if request.user.is_authenticated:
         role = request.user.userprofile.role
