@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>All Courses</h2>
+  <div class="row">
+    {% for course in courses %}
+      <div class="col-md-4">
+        <div class="card mb-3">
+          {% if course.thumbnail %}
+            <img src="{{ course.thumbnail.url }}" class="card-img-top" alt="{{ course.title }}">
+          {% endif %}
+          <div class="card-body">
+            <h5 class="card-title">{{ course.title }}</h5>
+            <p class="card-text">{{ course.category }}</p>
+            <a href="{% url 'course_detail' course.pk %}" class="btn btn-primary">View</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}
