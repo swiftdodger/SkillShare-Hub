@@ -1,14 +1,20 @@
+from django.contrib import messages
 from django.shortcuts import render, redirect
 from django.contrib.auth import login
 from django.contrib.auth.decorators import login_required
-from .forms import RegisterForm, UserProfileForm
+from users.forms import RegisterForm, UserProfileForm
+from users.models import UserProfile
 
 def register(request):
     if request.method == 'POST':
         form = RegisterForm(request.POST)
         if form.is_valid():
             user = form.save()
+            role = form.cleaned_data.get('role')  # ✅ get selected role from form
+            # Create UserProfile and attach the selected role
+            UserProfile.objects.create(user=user, role=role)
             login(request, user)
+            messages.success(request, "Registration successful. Welcome!")
             return redirect('role_redirect')
     else:
         form = RegisterForm()
