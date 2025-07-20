@@ -9,6 +9,7 @@ class RegisterForm(UserCreationForm):
     class Meta:
         model = User
         fields = ['username', 'email', 'password1', 'password2']
+        role = forms.ChoiceField(choices=UserProfile.ROLE_CHOICES)
 
 class UserProfileForm(forms.ModelForm):
     class Meta:
