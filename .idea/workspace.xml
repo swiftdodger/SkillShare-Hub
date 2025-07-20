@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1aab225c-873c-4bf4-9616-3bd4990a067d" name="Changes" comment="fixing redirecting after registration" />
+    <list default="true" id="1aab225c-873c-4bf4-9616-3bd4990a067d" name="Changes" comment="correcting html in register.html">
+      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,7 +123,7 @@
       <option name="presentableId" value="Default" />
       <updated>1752914644199</updated>
       <workItem from="1752914645254" duration="4044000" />
-      <workItem from="1752998212162" duration="3725000" />
+      <workItem from="1752998212162" duration="4074000" />
     </task>
     <task id="LOCAL-00001" summary="adding base html in the templates">
       <option name="closed" value="true" />
@@ -275,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753001949997</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="correcting html in register.html">
+      <option name="closed" value="true" />
+      <created>1753002042046</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1753002042046</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,6 +331,7 @@
     <MESSAGE value="creating create course/course_list and course_detail urls" />
     <MESSAGE value="adding courses html" />
     <MESSAGE value="fixing redirecting after registration" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing redirecting after registration" />
+    <MESSAGE value="correcting html in register.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="correcting html in register.html" />
   </component>
 </project>

@@ -5,11 +5,12 @@ from .models import UserProfile
 
 class RegisterForm(UserCreationForm):
     email = forms.EmailField(required=True)
+    role = forms.ChoiceField(choices=UserProfile.ROLE_CHOICES)
 
     class Meta:
         model = User
         fields = ['username', 'email', 'password1', 'password2']
-        role = forms.ChoiceField(choices=UserProfile.ROLE_CHOICES)
+
 
 class UserProfileForm(forms.ModelForm):
     class Meta:
