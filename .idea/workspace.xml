@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1aab225c-873c-4bf4-9616-3bd4990a067d" name="Changes" comment="setting up thr user app">
-      <change afterPath="$PROJECT_DIR$/courses/forms.py" afterDir="false" />
+    <list default="true" id="1aab225c-873c-4bf4-9616-3bd4990a067d" name="Changes" comment="making models inside courses  app">
+      <change afterPath="$PROJECT_DIR$/courses/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +121,7 @@
       <option name="presentableId" value="Default" />
       <updated>1752914644199</updated>
       <workItem from="1752914645254" duration="4044000" />
-      <workItem from="1752998212162" duration="1273000" />
+      <workItem from="1752998212162" duration="2417000" />
     </task>
     <task id="LOCAL-00001" summary="adding base html in the templates">
       <option name="closed" value="true" />
@@ -189,7 +187,55 @@
       <option name="project" value="LOCAL" />
       <updated>1752999271084</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="creating course app forms&#10;;&#10;Course and lessons">
+      <option name="closed" value="true" />
+      <created>1752999685431</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1752999685431</updated>
+    </task>
+    <task id="LOCAL-00010" summary="making migrations from courses">
+      <option name="closed" value="true" />
+      <created>1752999722024</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1752999722024</updated>
+    </task>
+    <task id="LOCAL-00011" summary="creating admin inside users">
+      <option name="closed" value="true" />
+      <created>1752999739102</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1752999739102</updated>
+    </task>
+    <task id="LOCAL-00012" summary="making models inside courses  app">
+      <option name="closed" value="true" />
+      <created>1752999766907</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1752999766907</updated>
+    </task>
+    <task id="LOCAL-00013" summary="importing stuff into views/courses">
+      <option name="closed" value="true" />
+      <created>1753000443151</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1753000443151</updated>
+    </task>
+    <task id="LOCAL-00014" summary="adding views/courses">
+      <option name="closed" value="true" />
+      <created>1753000475184</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1753000475184</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +272,12 @@
     <MESSAGE value="admin register inside users app" />
     <MESSAGE value="adding course model into models" />
     <MESSAGE value="creating lesson model" />
-    <option name="LAST_COMMIT_MESSAGE" value="creating lesson model" />
+    <MESSAGE value="creating course app forms&#10;;&#10;Course and lessons" />
+    <MESSAGE value="making migrations from courses" />
+    <MESSAGE value="creating admin inside users" />
+    <MESSAGE value="making models inside courses  app" />
+    <MESSAGE value="importing stuff into views/courses" />
+    <MESSAGE value="adding views/courses" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding views/courses" />
   </component>
 </project>
