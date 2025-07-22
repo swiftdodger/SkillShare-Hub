@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'LearningPlatform.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'learning_platform',
+        'NAME': 'SkillShare-Hub_db',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
         'HOST': 'localhost',
