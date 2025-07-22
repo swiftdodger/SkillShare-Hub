@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1aab225c-873c-4bf4-9616-3bd4990a067d" name="Changes" comment="fixing register,and login as instructor and student/&#10;added: logout option">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/instructor_dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/instructor_dashboard.html" afterDir="false" />
-    </list>
+    <list default="true" id="1aab225c-873c-4bf4-9616-3bd4990a067d" name="Changes" comment="correcting views" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,7 +128,7 @@
       <workItem from="1752914645254" duration="4044000" />
       <workItem from="1752998212162" duration="4806000" />
       <workItem from="1753124564826" duration="1241000" />
-      <workItem from="1753183216582" duration="7485000" />
+      <workItem from="1753183216582" duration="7877000" />
     </task>
     <task id="LOCAL-00001" summary="adding base html in the templates">
       <option name="closed" value="true" />
@@ -382,7 +378,23 @@
       <option name="project" value="LOCAL" />
       <updated>1753213924881</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="correcting views">
+      <option name="closed" value="true" />
+      <created>1753214645256</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1753214645256</updated>
+    </task>
+    <task id="LOCAL-00033" summary="adding detail nad list urls in courses/urls">
+      <option name="closed" value="true" />
+      <created>1753214842113</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1753214842113</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -412,8 +424,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="deleting comments in the base html" />
-    <MESSAGE value="setting up thr user app" />
     <MESSAGE value="admin register inside users app" />
     <MESSAGE value="adding course model into models" />
     <MESSAGE value="creating lesson model" />
@@ -437,6 +447,8 @@
     <MESSAGE value="fixing register,and login as instructor and student/&#10;added: logout option" />
     <MESSAGE value="added created_at model" />
     <MESSAGE value="including urls from courses app" />
-    <option name="LAST_COMMIT_MESSAGE" value="including urls from courses app" />
+    <MESSAGE value="correcting views" />
+    <MESSAGE value="adding detail nad list urls in courses/urls" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding detail nad list urls in courses/urls" />
   </component>
 </project>
