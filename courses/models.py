@@ -18,6 +18,7 @@ class Lesson(models.Model):
     title = models.CharField(max_length=100)
     content = models.TextField()
     video = models.FileField(upload_to='course_videos/', blank=True, null=True)
+    created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return f"{self.title} - {self.course.title}"
