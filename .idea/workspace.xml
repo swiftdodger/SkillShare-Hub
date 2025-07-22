@@ -4,20 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1aab225c-873c-4bf4-9616-3bd4990a067d" name="Changes" comment="adding reqirements.txt for better experience">
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/LearningPlatform.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LearningPlatform.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/350e2604-1c88-4e21-810b-328f9f5c5baa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/350e2604-1c88-4e21-810b-328f9f5c5baa.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/350e2604-1c88-4e21-810b-328f9f5c5baa/storage_v2/_src_/database/learning_platform.dMg6BA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/350e2604-1c88-4e21-810b-328f9f5c5baa/storage_v2/_src_/database/learning_platform.dMg6BA/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/350e2604-1c88-4e21-810b-328f9f5c5baa/storage_v2/_src_/database/learning_platform.dMg6BA/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/350e2604-1c88-4e21-810b-328f9f5c5baa/storage_v2/_src_/database/learning_platform.dMg6BA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/350e2604-1c88-4e21-810b-328f9f5c5baa/storage_v2/_src_/database/learning_platform.dMg6BA/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/350e2604-1c88-4e21-810b-328f9f5c5baa/storage_v2/_src_/database/learning_platform.dMg6BA/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1aab225c-873c-4bf4-9616-3bd4990a067d" name="Changes" comment="changing some stuff">
+      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LearningPlatform/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/LearningPlatform/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LearningPlatform/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LearningPlatform/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enrollements/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/enrollments/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enrollements/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/enrollments/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enrollements/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/enrollments/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enrollements/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/enrollments/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enrollements/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/enrollments/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enrollements/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/enrollments/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enrollements/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/enrollments/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +50,9 @@
     &quot;accountId&quot;: &quot;0848c9c1-5719-4b97-927c-2046d77eab31&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/users/views.py" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -139,7 +142,7 @@
       <workItem from="1752914645254" duration="4044000" />
       <workItem from="1752998212162" duration="4806000" />
       <workItem from="1753124564826" duration="1241000" />
-      <workItem from="1753183216582" duration="1261000" />
+      <workItem from="1753183216582" duration="2625000" />
     </task>
     <task id="LOCAL-00001" summary="adding base html in the templates">
       <option name="closed" value="true" />
@@ -341,7 +344,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753183776571</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="changing some stuff">
+      <option name="closed" value="true" />
+      <created>1753184759010</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1753184759010</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,6 +403,7 @@
     <MESSAGE value="adding role" />
     <MESSAGE value="adding reqirements.txt for better experience" />
     <MESSAGE value="changing database" />
-    <option name="LAST_COMMIT_MESSAGE" value="changing database" />
+    <MESSAGE value="changing some stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="changing some stuff" />
   </component>
 </project>

@@ -4,6 +4,7 @@ from django.contrib.auth import login
 from django.contrib.auth.decorators import login_required
 from users.forms import RegisterForm, UserProfileForm
 from users.models import UserProfile
+from django.contrib.auth.views import LoginView
 
 def register(request):
     if request.method == 'POST':
@@ -20,6 +21,11 @@ def register(request):
     else:
         form = RegisterForm()
     return render(request, 'register.html', {'form': form})
+
+class CustomLoginView(LoginView):
+    template_name = 'login.html'
+
+
 def root_redirect(request):
     if request.user.is_authenticated:
         role = request.user.userprofile.role
