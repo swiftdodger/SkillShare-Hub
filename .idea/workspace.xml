@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1aab225c-873c-4bf4-9616-3bd4990a067d" name="Changes" comment="add lesson management features in course detail and forms" />
+    <list default="true" id="1aab225c-873c-4bf4-9616-3bd4990a067d" name="Changes" comment="fix: update lesson management buttons to use request.user for instructor checks" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,7 +128,7 @@
       <workItem from="1752914645254" duration="4044000" />
       <workItem from="1752998212162" duration="4806000" />
       <workItem from="1753124564826" duration="1241000" />
-      <workItem from="1753183216582" duration="10590000" />
+      <workItem from="1753183216582" duration="11000000" />
     </task>
     <task id="LOCAL-00001" summary="adding base html in the templates">
       <option name="closed" value="true" />
@@ -442,7 +442,31 @@
       <option name="project" value="LOCAL" />
       <updated>1753217571289</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="add lesson management features in course detail and forms">
+      <option name="closed" value="true" />
+      <created>1753217584112</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1753217584112</updated>
+    </task>
+    <task id="LOCAL-00041" summary="update lesson management buttons to include 'Lesson' in edit and delete actions">
+      <option name="closed" value="true" />
+      <created>1753217869150</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1753217869150</updated>
+    </task>
+    <task id="LOCAL-00042" summary="fix: update lesson management buttons to use request.user for instructor checks">
+      <option name="closed" value="true" />
+      <created>1753217983359</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1753217983359</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,8 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="making models inside courses  app" />
-    <MESSAGE value="importing stuff into views/courses" />
     <MESSAGE value="adding views/courses" />
     <MESSAGE value="creating create course/course_list and course_detail urls" />
     <MESSAGE value="adding courses html" />
@@ -497,6 +519,8 @@
     <MESSAGE value="add course browsing link to instructor and student dashboards" />
     <MESSAGE value="add create course button for instructors in course list" />
     <MESSAGE value="add lesson management features in course detail and forms" />
-    <option name="LAST_COMMIT_MESSAGE" value="add lesson management features in course detail and forms" />
+    <MESSAGE value="update lesson management buttons to include 'Lesson' in edit and delete actions" />
+    <MESSAGE value="fix: update lesson management buttons to use request.user for instructor checks" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: update lesson management buttons to use request.user for instructor checks" />
   </component>
 </project>

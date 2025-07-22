@@ -74,3 +74,7 @@ def student_dashboard(request):
     if request.user.userprofile.role != 'student':
         return render(request, 'unauthorized.html', status=403)
     return render(request, 'student_dashboard.html')
+
+
+def unauthorized(request):
+    return render(request, 'unauthorized.html', status=403)
