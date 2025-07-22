@@ -35,7 +35,7 @@ def create_course(request):
 @login_required()
 def lesson_create(request, course_id):
     course = get_object_or_404(Course, pk=course_id)
-    if request.user != course.instructor:
+    if request.user != course.instructor.user:
         return redirect('unauthorized')
 
     if request.method == 'POST':
@@ -53,7 +53,7 @@ def lesson_create(request, course_id):
 @login_required()
 def lesson_edit(request, lesson_id):
     lesson = get_object_or_404(Lesson, id=lesson_id)
-    if request.user != lesson.course.instructor:
+    if request.user != lesson.course.instructor.user:
         return redirect('course_detail', lesson.course.id)
 
     form = LessonForm(request.POST or None, instance=lesson)
@@ -65,7 +65,7 @@ def lesson_edit(request, lesson_id):
 @login_required()
 def lesson_delete(request, lesson_id):
     lesson = get_object_or_404(Lesson, id=lesson_id)
-    if request.user != lesson.course.instructor:
+    if request.user != lesson.course.instructor.user:
         return redirect('course_detail', lesson.course.id)
 
     if request.method == 'POST':
