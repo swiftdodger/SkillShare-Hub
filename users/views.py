@@ -7,6 +7,9 @@ from users.models import UserProfile
 from django.contrib.auth.views import LoginView
 
 def register(request):
+    if request.user.is_authenticated:
+        return redirect('role_redirect')  # If the user is already authenticated, redirect to the role-specific dashboard
+
     if request.method == 'POST':
         form = RegisterForm(request.POST)
         if form.is_valid():
