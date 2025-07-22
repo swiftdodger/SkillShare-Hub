@@ -2,4 +2,6 @@
 {% block content %}
   <h2>Student Dashboard</h2>
   <p>Welcome, {{ request.user.username }}! Here are your enrolled courses.</p>
+    <a href="{% url 'course_list' %}" class="btn btn-outline-primary">Browse All Courses</a>
+
 {% endblock %}

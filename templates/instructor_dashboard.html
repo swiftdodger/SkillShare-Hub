@@ -3,4 +3,6 @@
   <h2>Instructor Dashboard</h2>
   <p>Welcome, {{ request.user.username }}! You can manage your courses here.</p>
     <a href="{% url 'create_course' %}" class="btn btn-success">Create Course</a>
+    <a href="{% url 'course_list' %}" class="btn btn-outline-primary">Browse All Courses</a>
+
 {% endblock %}
