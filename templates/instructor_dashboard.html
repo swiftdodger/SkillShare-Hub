@@ -2,4 +2,5 @@
 {% block content %}
   <h2>Instructor Dashboard</h2>
   <p>Welcome, {{ request.user.username }}! You can manage your courses here.</p>
+    <a href="{% url 'create_course' %}" class="btn btn-success">Create Course</a>
 {% endblock %}

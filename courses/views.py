@@ -11,7 +11,7 @@ def course_list(request):
 
 def course_detail(request, pk):
     course = get_object_or_404(Course, pk=pk)
-    return render(request, 'detail.html', {'course': course})
+    return render(request, 'course_detail.html', {'course': course})
 
 @login_required()
 def create_course(request):
@@ -21,9 +21,9 @@ def create_course(request):
         form = CourseForm(request.POST,request.FILES)
         if form.is_valid():
             course = form.save(commit=False)
-            course.instructor = request.user
+            course.instructor = request.user.userprofile
             course.save()
             return redirect('course_detail', pk=course.pk)
     else:
         form = CourseForm()
-    return render(request, 'create_course.html', {'form': form})
+    return render(request, 'course_form.html', {'form': form})
