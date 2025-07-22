@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1aab225c-873c-4bf4-9616-3bd4990a067d" name="Changes" comment="correcting views and adding lesson creation link in course detail">
-      <change beforePath="$PROJECT_DIR$/templates/instructor_dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/instructor_dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/student_dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/student_dashboard.html" afterDir="false" />
-    </list>
+    <list default="true" id="1aab225c-873c-4bf4-9616-3bd4990a067d" name="Changes" comment="add course browsing link to instructor and student dashboards" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,7 +128,7 @@
       <workItem from="1752914645254" duration="4044000" />
       <workItem from="1752998212162" duration="4806000" />
       <workItem from="1753124564826" duration="1241000" />
-      <workItem from="1753183216582" duration="8488000" />
+      <workItem from="1753183216582" duration="8826000" />
     </task>
     <task id="LOCAL-00001" summary="adding base html in the templates">
       <option name="closed" value="true" />
@@ -413,7 +410,23 @@
       <option name="project" value="LOCAL" />
       <updated>1753215320897</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="add media URL and root for static files in settings and urls">
+      <option name="closed" value="true" />
+      <created>1753215696717</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1753215696717</updated>
+    </task>
+    <task id="LOCAL-00037" summary="add course browsing link to instructor and student dashboards">
+      <option name="closed" value="true" />
+      <created>1753215703899</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1753215703899</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,8 +456,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="creating lesson model" />
-    <MESSAGE value="creating course app forms&#10;;&#10;Course and lessons" />
     <MESSAGE value="making migrations from courses" />
     <MESSAGE value="creating admin inside users" />
     <MESSAGE value="making models inside courses  app" />
@@ -468,6 +479,8 @@
     <MESSAGE value="adding detail nad list urls in courses/urls" />
     <MESSAGE value="correcting views and updating task summaries in workspace.xml" />
     <MESSAGE value="correcting views and adding lesson creation link in course detail" />
-    <option name="LAST_COMMIT_MESSAGE" value="correcting views and adding lesson creation link in course detail" />
+    <MESSAGE value="add media URL and root for static files in settings and urls" />
+    <MESSAGE value="add course browsing link to instructor and student dashboards" />
+    <option name="LAST_COMMIT_MESSAGE" value="add course browsing link to instructor and student dashboards" />
   </component>
 </project>

@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
   <h2>All Courses</h2>
+  {% if request.user.is_authenticated and request.user.userprofile.role == 'instructor' %}
+    <a href="{% url 'create_course' %}" class="btn btn-success mb-3">+ Create New Course</a>
+  {% endif %}
   <div class="row">
     {% for course in courses %}
       <div class="col-md-4">
