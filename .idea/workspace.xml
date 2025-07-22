@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1aab225c-873c-4bf4-9616-3bd4990a067d" name="Changes" comment="changing some stuff">
-      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+    <list default="true" id="1aab225c-873c-4bf4-9616-3bd4990a067d" name="Changes" comment="fixing login and register">
+      <change afterPath="$PROJECT_DIR$/templates/logout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LearningPlatform/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/LearningPlatform/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LearningPlatform/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LearningPlatform/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enrollements/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/enrollments/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enrollements/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/enrollments/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enrollements/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/enrollments/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enrollements/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/enrollments/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enrollements/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/enrollments/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enrollements/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/enrollments/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enrollements/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/enrollments/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
@@ -142,7 +135,7 @@
       <workItem from="1752914645254" duration="4044000" />
       <workItem from="1752998212162" duration="4806000" />
       <workItem from="1753124564826" duration="1241000" />
-      <workItem from="1753183216582" duration="2625000" />
+      <workItem from="1753183216582" duration="5934000" />
     </task>
     <task id="LOCAL-00001" summary="adding base html in the templates">
       <option name="closed" value="true" />
@@ -352,7 +345,23 @@
       <option name="project" value="LOCAL" />
       <updated>1753184759010</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="fixing login and register">
+      <option name="closed" value="true" />
+      <created>1753185974082</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1753185974082</updated>
+    </task>
+    <task id="LOCAL-00028" summary="If the user is already authenticated, redirect to the role-specific dashboard">
+      <option name="closed" value="true" />
+      <created>1753208279006</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1753208279006</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,6 +413,8 @@
     <MESSAGE value="adding reqirements.txt for better experience" />
     <MESSAGE value="changing database" />
     <MESSAGE value="changing some stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="changing some stuff" />
+    <MESSAGE value="fixing login and register" />
+    <MESSAGE value="If the user is already authenticated, redirect to the role-specific dashboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="If the user is already authenticated, redirect to the role-specific dashboard" />
   </component>
 </project>

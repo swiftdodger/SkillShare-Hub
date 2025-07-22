@@ -17,7 +17,11 @@ def register(request):
             user.email = form.cleaned_data['email']
             user.save()
             role = form.cleaned_data.get('role')
-            UserProfile.objects.create(user=user, role=role)
+            profile, created = UserProfile.objects.get_or_create(
+                user=user,
+                defaults={'role': role}
+            )
+
             login(request, user)
             messages.success(request, "Registration successful!")
             return redirect('role_redirect')
