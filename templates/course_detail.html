@@ -7,8 +7,8 @@
         {% if user == course.instructor %}
           <span>
             <a href="{% url 'lesson_create' course.id %}" class="btn btn-success mb-3">Create Lesson</a>
-            <a href="{% url 'lesson_edit' lesson.id %}" class="btn btn-sm btn-outline-secondary">Edit</a>
-            <a href="{% url 'lesson_delete' lesson.id %}" class="btn btn-sm btn-outline-danger">Delete</a>
+            <a href="{% url 'lesson_edit' lesson.id %}" class="btn btn-sm btn-outline-secondary">Edit Lesson</a>
+            <a href="{% url 'lesson_delete' lesson.id %}" class="btn btn-sm btn-outline-danger">Delete Lesson</a>
           </span>
         {% endif %}
       </li>
