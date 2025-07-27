@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="card shadow-sm">
+    <div class="card-body">
+      <h2 class="card-title">{{ lesson.title }}</h2>
+
+      {% if lesson.video_url %}
+        <div class="ratio ratio-16x9 mb-3">
+          <iframe src="{{ lesson.video_url }}" title="Lesson Video" allowfullscreen></iframe>
+        </div>
+      {% endif %}
+
+      <p class="card-text">{{ lesson.content|linebreaks }}</p>
+
+      <a href="{% url 'course_detail' lesson.course.id %}" class="btn btn-secondary mt-3">← Back to Course</a>
+    </div>
+  </div>
+{% endblock %}
