@@ -3,11 +3,12 @@ from django.urls import reverse
 from django.contrib.auth.models import User
 from courses.models import Course
 
-# Create your tests here.
+from users.models import UserProfile
 
 class CourseTests(TestCase):
     def setUp(self):
         self.user = User.objects.create_user(username='instructor', password='pass123')
+        UserProfile.objects.create(user=self.user, role='instructor')
         self.client.login(username='instructor', password='pass123')
 
     def test_create_course(self):
