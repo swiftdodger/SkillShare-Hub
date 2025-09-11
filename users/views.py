@@ -8,7 +8,7 @@ from django.contrib.auth.views import LoginView
 
 def register(request):
     if request.user.is_authenticated:
-        return redirect('role_redirect')  # If the user is already authenticated, redirect to the role-specific dashboard
+        return redirect('role_redirect')
 
     if request.method == 'POST':
         form = RegisterForm(request.POST)
@@ -27,6 +27,7 @@ def register(request):
             return redirect('role_redirect')
     else:
         form = RegisterForm()
+
     return render(request, 'register.html', {'form': form})
 
 class CustomLoginView(LoginView):
@@ -34,14 +35,19 @@ class CustomLoginView(LoginView):
 
 
 def root_redirect(request):
-    if request.user.is_authenticated:
-        role = request.user.userprofile.role
-        if role == 'instructor':
-            return redirect('instructor_dashboard')
-        else:
-            return redirect('student_dashboard')
+    profile, created = UserProfile.objects.get_or_create(
+        user=request.user,
+        defaults={'role': 'student', 'bio': ''}
+    )
+
+    role = profile.role
+
+    if role == 'instructor':
+        return redirect('instructor_dashboard')
+    elif role == 'student':
+        return redirect('student_dashboard')
     else:
-        return redirect('register')
+        return redirect('course_list')
 
 @login_required
 def edit_profile(request):

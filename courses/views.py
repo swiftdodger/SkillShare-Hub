@@ -15,21 +15,26 @@ def course_list(request):
 
 
 @login_required
-def course_detail(request, course_id):
-    course = get_object_or_404(Course, id=course_id)
+def course_detail(request, pk):
+    course = get_object_or_404(Course, id=pk)
 
     # Check access permission
-    is_instructor = request.user == course.instructor
+    is_instructor = request.user.id == course.instructor.id
     is_enrolled = Enrollment.objects.filter(course=course, student=request.user).exists()
 
+
     if not is_instructor and not is_enrolled:
+        print('inside if not instructor and not is_enrolled')
+
         messages.error(request, "You must enroll to view this course.")
         return redirect('course_list')
-
+    print('before return render'),
     return render(request, 'course_detail.html', {
         'course': course,
         'is_instructor': is_instructor
+
     })
+
 
 @login_required()
 def create_course(request):
