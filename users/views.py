@@ -33,7 +33,7 @@ def register(request):
 class CustomLoginView(LoginView):
     template_name = 'login.html'
 
-
+@login_required
 def root_redirect(request):
     profile, created = UserProfile.objects.get_or_create(
         user=request.user,

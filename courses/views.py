@@ -1,14 +1,16 @@
 from django.contrib import messages
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
+from django.views.decorators.cache import cache_page
 from django.views.generic import CreateView
+from django.core.cache import cache
 from enrollments.models import Enrollment
 from courses.models import Course, Lesson
 from courses.forms import CourseForm, LessonForm
 
 
 # Create your views here.
-
+@cache_page(60 * 15)  # Cache the course list view for 15 minutes
 def course_list(request):
     courses = Course.objects.all()
     return render(request, 'course_list.html', {'courses': courses})
@@ -18,21 +20,23 @@ def course_list(request):
 def course_detail(request, pk):
     course = get_object_or_404(Course, id=pk)
 
-    # Check access permission
     is_instructor = request.user.id == course.instructor.id
-    is_enrolled = Enrollment.objects.filter(course=course, student=request.user).exists()
 
+    # Cache enrollment status per user/course
+    cache_key = f'enrollment_{request.user.id}_{course.id}'
+    is_enrolled = cache.get(cache_key)
+
+    if is_enrolled is None:
+        is_enrolled = Enrollment.objects.filter(course=course, student=request.user).exists()
+        cache.set(cache_key, is_enrolled, 60 * 15)  # Cache for 15 minutes
 
     if not is_instructor and not is_enrolled:
-        print('inside if not instructor and not is_enrolled')
-
         messages.error(request, "You must enroll to view this course.")
         return redirect('course_list')
-    print('before return render'),
+
     return render(request, 'course_detail.html', {
         'course': course,
         'is_instructor': is_instructor
-
     })
 
 
