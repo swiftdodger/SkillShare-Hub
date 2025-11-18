@@ -1,7 +1,7 @@
 from pathlib import Path
 import environ
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 # Initialize django-environ
 env = environ.Env(
@@ -87,17 +87,17 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'LearningPlatform.wsgi.application'
 
-# Database from env (defaults kept for local dev)
-DATABASES = {
-    'default': {
-        'ENGINE': env('DB_ENGINE', default='django.db.backends.postgresql'),
-        'NAME': env('DB_NAME'),
-        'USER': env('DB_USER'),
-        'PASSWORD': env('DB_PASSWORD'),
-        'HOST': env('DB_HOST'),
-        'PORT': env('DB_PORT'),
-    }
-}
+# # Database from env (defaults kept for local dev)
+# DATABASES = {
+#     'default': {
+#         'ENGINE': env('DB_ENGINE', default='django.db.backends.postgresql'),
+#         'NAME': env('DB_NAME'),
+#         'USER': env('DB_USER'),
+#         'PASSWORD': env('DB_PASSWORD'),
+#         'HOST': env('DB_HOST'),
+#         'PORT': env('DB_PORT'),
+#     }
+# }
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [

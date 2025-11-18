@@ -63,11 +63,12 @@ db.sqlite3-journal
 
 # Virtual Environment
 venv/
-env/
 ENV/
-env.bak/
+.env/
+.venv/
+env/
 venv.bak/
-.venv
+env.bak/
 
 # Docker
 *.pid
@@ -105,6 +106,7 @@ celerybeat.pid
 # Environments
 .env
 .venv
+venv
 env/
 venv/
 ENV/
@@ -113,4 +115,3 @@ venv.bak/
 
 # Backup files
 *.bak
-
