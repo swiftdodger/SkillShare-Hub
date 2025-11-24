@@ -24,8 +24,11 @@ jobs:
           if [ -f requirements.txt ]; then
             pip install -r requirements.txt
           fi
-          pip install pytest==8.3.3
+          # Ensure pytest, pytest-django and Django itself are installed
+          pip install pytest==8.3.3 pytest-django==4.9.0
 
       - name: Run tests
+        env:
+          DJANGO_SETTINGS_MODULE: LearningPlatform.settings.prod
         run: |
-          python -m pytest -q || python -m pytest
+          python -m pytest -q
