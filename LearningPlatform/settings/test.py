@@ -1,7 +1,6 @@
 from .base import *
 
 DEBUG = True
-SECRET_KEY = 'test-secret-key-not-for-production'
 ALLOWED_HOSTS = ['*']
 
 # Use SQLite for tests — no Postgres/Redis needed in CI
