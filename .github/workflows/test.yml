@@ -28,7 +28,7 @@ jobs:
 
       - name: Run tests
         env:
-          SECRET_KEY: ${{ secrets.SECRET_KEY }}
+          SECRET_KEY: ${{ variables.SECRET_KEY }}
         run: |
           python -m pytest -q || python -m pytest
 
