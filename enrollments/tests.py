@@ -5,7 +5,8 @@ from courses.models import Course
 from enrollments.models import Enrollment
 from django.urls import reverse
 
-class EnrollmentTests(TestCase):
+
+class TestEnrollmentViews(TestCase):
     def setUp(self):
         # Create student + profile
         self.student_user = User.objects.create_user(username='student', password='pass123')
@@ -29,3 +30,16 @@ class EnrollmentTests(TestCase):
         response = self.client.get(url)
         self.assertEqual(response.status_code, 302)
         self.assertTrue(Enrollment.objects.filter(student=self.student_user, course=self.course).exists())
+
+    def test_repeated_enrollment_does_not_duplicate_rows(self):
+        self.client.login(username='student', password='pass123')
+        url = reverse('enroll_course', args=[self.course.id])
+
+        self.client.get(url)
+        self.client.get(url)
+
+        self.assertEqual(
+            Enrollment.objects.filter(student=self.student_user, course=self.course).count(),
+            1,
+        )
+
